@@ -1,6 +1,7 @@
 import { createFeatureSelector, createSelector } from '@ngrx/store';
 import * as fromCarRepairs from '../reducers/index';
 import * as fromCarRepairsList from '../reducers/car-repairs-list.reducer';
+import { carRepairsAdapter } from '../reducers/car-repairs-list.reducer';
 
 export const selectCarRepairsState = createFeatureSelector<fromCarRepairs.State>(
   fromCarRepairs.carRepairsFeatureKey,
@@ -28,7 +29,7 @@ export const selectIsFetchingNeeded = createSelector(
 
 export const selectAllCarRepairs = createSelector(
   selectCarRepairsListState,
-  state => state.carRepairs,
+  state => carRepairsAdapter.getSelectors().selectAll(state)
 );
 
 export const selectNewRepairs = createSelector(

@@ -13,14 +13,12 @@ export interface State extends EntityState<CarRepair> {
   isFetching: boolean;
   hasError: boolean;
   hasFetched: boolean;
-  carRepairs: CarRepair[];
 }
 
 export const initialState: State = carRepairsAdapter.getInitialState({
   isFetching: false,
   hasError: false,
   hasFetched: false,
-  carRepairs: [],
 });
 
 export const reducer = createReducer(
