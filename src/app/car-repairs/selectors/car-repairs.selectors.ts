@@ -11,20 +11,52 @@ export const selectCarRepairsListState = createSelector(
   state => state[fromCarRepairsList.carRepairsListFeatureKey],
 );
 
-export const selectIsFetching = undefined; // TODO: implement
+export const selectIsFetching = createSelector(
+  selectCarRepairsListState,
+  state => state.isFetching,
+);
 
-export const selectIsFetchingNeeded = undefined; // TODO: implement
+export const selectHasFetched = createSelector(
+  selectCarRepairsListState,
+  state => state.hasFetched
+);
 
-export const selectAllCarRepairs = undefined; // TODO: implement
+export const selectIsFetchingNeeded = createSelector(
+  selectCarRepairsListState,
+  state => !state.hasFetched || (state.hasError && !state.isFetching),
+);
 
-export const selectNewRepairs = undefined; // TODO: implement
+export const selectAllCarRepairs = createSelector(
+  selectCarRepairsListState,
+  state => state.carRepairs,
+);
 
-export const selectInProgressRepairs = undefined; // TODO: implement
+export const selectNewRepairs = createSelector(
+  selectAllCarRepairs,
+  carRepairs => carRepairs.filter(repair => repair.state === 'New')
+);
 
-export const selectDoneRepairs = undefined; // TODO: implement
+export const selectInProgressRepairs = createSelector(
+  selectAllCarRepairs,
+  carRepairs => carRepairs.filter(repair => repair.state === 'In progress')
+);
 
-export const selectTotalOfNewCarRepairs = undefined; // TODO: implement
+export const selectDoneRepairs = createSelector(
+  selectAllCarRepairs,
+  carRepairs => carRepairs.filter(repair => repair.state === 'Done')
+);
 
-export const selectTotalOfInProgressCarRepairs = undefined; // TODO: implement
+export const selectTotalOfNewCarRepairs = createSelector(
+  selectNewRepairs,
+  newRepairs => newRepairs.length,
+);
 
-export const selectTotalOfDoneCarRepairs = undefined; // TODO: implement
+export const selectTotalOfInProgressCarRepairs = createSelector(
+  selectInProgressRepairs,
+  inProgressRepairs => inProgressRepairs.length,
+);
+
+export const selectTotalOfDoneCarRepairs = createSelector(
+  selectDoneRepairs,
+  doneRepairs => doneRepairs.length,
+);
