@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<testsuite name="Chrome Headless 119.0.6045.160 (Windows 10)" package="" timestamp="2023-11-26T16:27:52" id="0" hostname="DESKTOP-9CP19E9" tests="12" errors="0" failures="0" time="0.341">
+  <properties>
+    <property name="browser.fullName" value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/119.0.6045.160 Safari/537.36"/>
+  </properties>
+  <testcase name="AppComponent when starting from dashboard should only show a spinner until data is loaded" time="0.144" classname="AppComponent when starting from dashboard"/>
+  <testcase name="AppComponent when starting from dashboard should show correct stats" time="0.018" classname="AppComponent when starting from dashboard"/>
+  <testcase name="AppComponent when starting from dashboard should not reload data when going to list" time="0.028" classname="AppComponent when starting from dashboard"/>
+  <testcase name="AppComponent when starting from kanban board when advancing new repairs should add the repair to in progress column" time="0.021" classname="AppComponent when starting from kanban board when advancing new repairs"/>
+  <testcase name="AppComponent when starting from kanban board when advancing new repairs should remove the repair from new column" time="0.018" classname="AppComponent when starting from kanban board when advancing new repairs"/>
+  <testcase name="AppComponent when starting from kanban board when advancing in progress repairs should remove the repair from in progress column" time="0.016" classname="AppComponent when starting from kanban board when advancing in progress repairs"/>
+  <testcase name="AppComponent when starting from kanban board when advancing in progress repairs should add the repair to done column" time="0.015" classname="AppComponent when starting from kanban board when advancing in progress repairs"/>
+  <testcase name="AppComponent when starting from kanban board should show done repairs" time="0.018" classname="AppComponent when starting from kanban board"/>
+  <testcase name="AppComponent when starting from kanban board should only show a spinner until data is loaded" time="0.015" classname="AppComponent when starting from kanban board"/>
+  <testcase name="AppComponent when starting from kanban board should not reload data when going to dashboard" time="0.018" classname="AppComponent when starting from kanban board"/>
+  <testcase name="AppComponent when starting from kanban board should show ongoing repairs" time="0.015" classname="AppComponent when starting from kanban board"/>
+  <testcase name="AppComponent when starting from kanban board should show new repairs" time="0.015" classname="AppComponent when starting from kanban board"/>
+  <system-out>
+    <![CDATA[Chrome Headless 119.0.6045.160 (Windows 10) WARN: 'Navigation triggered outside Angular zone, did you forget to call 'ngZone.run()'?'
+,Chrome Headless 119.0.6045.160 (Windows 10) WARN: 'Navigation triggered outside Angular zone, did you forget to call 'ngZone.run()'?'
+,Chrome Headless 119.0.6045.160 (Windows 10) WARN: 'Navigation triggered outside Angular zone, did you forget to call 'ngZone.run()'?'
+,Chrome Headless 119.0.6045.160 (Windows 10) WARN: 'Navigation triggered outside Angular zone, did you forget to call 'ngZone.run()'?'
+,Chrome Headless 119.0.6045.160 (Windows 10) WARN: 'Navigation triggered outside Angular zone, did you forget to call 'ngZone.run()'?'
+,Chrome Headless 119.0.6045.160 (Windows 10) WARN: 'Navigation triggered outside Angular zone, did you forget to call 'ngZone.run()'?'
+,Chrome Headless 119.0.6045.160 (Windows 10) WARN: 'Navigation triggered outside Angular zone, did you forget to call 'ngZone.run()'?'
+,Chrome Headless 119.0.6045.160 (Windows 10) WARN: 'Navigation triggered outside Angular zone, did you forget to call 'ngZone.run()'?'
+,Chrome Headless 119.0.6045.160 (Windows 10) WARN: 'Navigation triggered outside Angular zone, did you forget to call 'ngZone.run()'?'
+,Chrome Headless 119.0.6045.160 (Windows 10) WARN: 'Navigation triggered outside Angular zone, did you forget to call 'ngZone.run()'?'
+,Chrome Headless 119.0.6045.160 (Windows 10) WARN: 'Navigation triggered outside Angular zone, did you forget to call 'ngZone.run()'?'
+,Chrome Headless 119.0.6045.160 (Windows 10) WARN: 'Navigation triggered outside Angular zone, did you forget to call 'ngZone.run()'?'
+,Chrome Headless 119.0.6045.160 (Windows 10) WARN: 'Navigation triggered outside Angular zone, did you forget to call 'ngZone.run()'?'
+,Chrome Headless 119.0.6045.160 (Windows 10) WARN: 'Navigation triggered outside Angular zone, did you forget to call 'ngZone.run()'?'
+
+]]>
+  </system-out>
+  <system-err/>
+</testsuite>
